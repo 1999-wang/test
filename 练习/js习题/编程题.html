@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // var num = prompt("请输入年龄");  //"18"
+        //     if(num<14){
+        //         console.log("青少年");
+        //     }
+        //     if(num>=14||num<24){
+        //         console.log("青年")
+        //     }
+        //     console.log(num);
+        //     var num = prompt("请输入阶层");
+        //     var a=num,j=1;
+        //     for(var i=0;i<num;i++)
+        //     {
+        //         j*=a;
+        //         a--;
+        //     }
+        //     console.log(j);
+        //     function fn(num){
+        //         var a=num,j=1;
+        //     for(var i=0;i<num;i++)
+        //     {
+        //         j*=a;
+        //         a--;
+        //     }
+        //         return j;
+        //     }
+        //     console.log(fn(1)+fn(2));
+        // var num = prompt("请输入想要的层数");
+        // var a=num;
+        // for(var i=0;i<a;i++)
+        // {
+        //     var b;
+        //     b++;
+        //     for(var j=1;j<=b;j++)
+        //     {
+        //         console.log(j);
+        //         console.log(" ")
+        //     }
+        //     console.log("\n");
+        // }
+        // var num =prompt("请输入数字")
+        // var j=0;
+        // function niu(a){
+        //       if(a%3==0&&a%5==0&&a%7==0)
+        //     //   console.log("他是那个男人");
+        //     {document.write("他是那个男人");
+        //     document.write("<br/>");}
+        // }
+        // niu(num);
+        // function niu1(a){
+        //       if(a%3==0&&a%5==0&&a%7==0)
+        //       {
+        //     //   console.log(a);
+        //     document.write(a);
+        //     document.write("  ")
+        //       j++;
+        //       if(j%6==0)
+        //     //   console.log("\n");
+        //     document.write("<br/>");
+        //       }
+
+        // }
+
+        // for(var i=1;i<=1000;i++)
+        // {
+        //      niu1(i);
+        // }
+        // var n=prompt("请输入选择的数");
+        // function feibo(n)
+        // {
+        //     if(n==1||n==2)
+        //     {
+        //         return 1;
+        //     }
+        //     else{
+        //         return feibo(n-1)+feibo(n-2);
+        //     }
+        // }
+        // function feibo1(m)
+        // {
+        //     var temp;
+        //     var q=w=1;
+        //     var j=2;
+        //     if(m==1||m==2)
+        //     {
+        //         return 1;
+        //     }
+        //     else{
+        //         for(var i=3;i<=m;i++)
+        //         { 
+        //             j=q+w;
+        //             temp=j;
+        //              q=w;
+        //              w=temp;
+
+        //         }
+        //         return j;
+        //     }
+
+        // }
+        // a=feibo(n);
+        // console.log(a);0
+        // b=feibo1(n);
+        // console.log(b);
+        //     var m=prompt("输入想玩的次数");
+        // var j=0;
+        // var w=0;
+        // var a,b,c;
+
+        // function getRandomNumberByRange(start, end) {
+
+        // return Math.floor(Math.random() * (end - start) + start)
+
+        // }
+        // for(var i=0;i<m;i++){
+        // a=getRandomNumberByRange(1,10 );
+        // b=getRandomNumberByRange(1,10 );
+        // c=getRandomNumberByRange(1,10 );
+        // if(a==8||b==8||c==8)
+        // {
+        //     j++;
+        //     w++;
+        // }
+        // else{
+        //     w++;
+        // }
+        // }
+        // if(m==0)
+        // console.log("0") ;
+        // else{
+        //     console.log(j/w);
+        // }    
+        //   var d= new Date();
+        //   console.log(d.getFullYear()+"年")
+        // var j=0;
+        // var b=a=s=new String;
+        // function CollectDigits(s)
+        // {
+        //     for(var i=0;i<s.length;i++)
+        //     {
+        //         if(s[i]=="1"||s[i]=="2"||s[i]=="3"||s[i]=="4"||s[i]=="5"||s[i]=="6"||s[i]=="7")
+        //         {
+        //            a+=s[i];
+        //         }
+        //     }
+        //     return a;
+        // }
+        var a = b = c = new String;
+        var m, n;
+        function haha(a, b) {
+            if (a.length < b.length) {
+                m = a.length;
+                n = b.length;
+            }
+            else {
+                m = b.length;
+                n = a.length;
+            }
+            for (var i = 0; i < m; i++) {
+                h = a[i] + b[i];
+                c += h;
+            }
+          
+            for (var j = m; j < n; j++) {
+
+                if (n == a.length) {
+                    h = a[j];
+                    c += n;
+                }
+                if (n == b.length) {
+                    h = b[j];
+                    c += h;
+                }
+
+            }
+            return c;
+        }
+        c = haha("asd", "qwszd1");
+        console.log(c);
+        // b=CollectDigits("adsa123saad");
+        // console.log(b);
+        // var inntotal;
+        // function sumInteger() {
+        //     var total = 0;
+        //     for (var i = 0; i < sumInteger.arguments.length; i++) {
+        //         total += sumInteger.arguments[i];
+        //     }
+        //     alert(arguments.length);
+        //     alert(arguments[0]);
+        //     return total;
+        // }
+        // inntotal = sumInteger(100, 45, 567, 234);
+        // document.write("函数sumInteger(100,45,567,234):" + inttotal + "<br>");
+    </script>
+</body>
+
+</html>

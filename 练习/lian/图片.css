@@ -1,0 +1,57 @@
+.search-input{
+    font-style: italic;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.diyi-1 {
+    width:1280px;
+    height:120px;
+    text-align: center;
+}
+.diyi-2{
+    position:absolute;
+    left:139px;
+            top:37px;
+            bottom: 36px;
+            right: 952px;
+    width:189px;
+    height:47px;
+    text-align: center;
+    
+}
+.diyi-3{
+    position:absolute;
+    left:492px;
+        top:55px;
+            bottom: 54px;
+            right: 317px;
+            
+}
+.diyi-4{
+    position:absolute;
+    left:1011px;
+        top:45px;
+            bottom: 45px;
+            right: 317px;
+            
+}
+.search-list a{
+     font-size: 11px;
+    float: left; 
+}
+.diyi-2{
+    width:189px;
+height:47px;
+}
+
+.dier-1{
+    background-color: #31333E;
+    width:1280px;
+    height:460px;
+    background:rgba(49,51,62,1);
+}
+

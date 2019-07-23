@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    height: 0.48rem;
+    background:#FFFFFF;
+    display: flex;
+    padding: 0.2rem;
+}
+.search{
+    width: 6.66rem;
+    height: 0.5rem;
+    border-radius: 0.25rem;
+    border:none;
+    outline: none;
+    text-indent: 0.61rem;
+    background: #EEEEEE url(../images/4.png) 0.2rem 0.1rem no-repeat;
+    /* 设置背景图片的尺寸 */
+    background-size:0.3rem 0.3rem;
+}
+
+.message{
+    width: 0.28rem;
+    height: 0.3rem;
+    margin-left: 0.2rem;
+    margin-top: 0.1rem;
+}
+.tu2{
+    width: 7.5rem;
+    height: 3.9rem;
+    display: block;
+}
+.menu{
+    display: flex;
+    padding: 0.2rem 0.45rem;
+    justify-content: space-between;
+}
+.menu li{
+    width: 1.2rem;
+    font-size: 0.2rem;
+    text-align: center;
+}
+.menu li img{
+    width: 0.8rem;
+    height: 0.8rem;
+}
+.guanggao{
+    padding: 0.1rem 0.2rem 0.19rem;
+    display: block;
+}
+.guanggao img{
+    width: 7.1rem;
+    height: 1.4rem;
+    display: block;
+}
+.four{
+    width: 7.5rem;
+    height: 0.11rem;
+    background-color: #EEEEEE;
+}
+.five{
+    width: 7.5rem;
+    
+    display: flex;
+    padding: 0.19rem 0.2rem 0.21rem;
+}
+.five img{
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-top: 0.06rem;
+}
+.five .jiantou{
+    height: 0.24rem;
+    width: 0.14rem;
+    margin-left: 4.29rem;
+    margin-top:0.19rem;
+}
+.five-zi .ziti1{
+     font-size: 0.27rem;
+     height: 0.42rem;
+     line-height: 0.27rem;
+     color: #333333;
+}
+.five-zi .ziti2{
+     font-size: 0.18rem;
+     color:#999999;
+}
+.five-zi{
+    margin-left:  0.2rem; 
+}
+.six{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left:0.2rem;
+    padding-right:0.2rem;
+}
+.six div ul li img{
+    width: 2.3rem;
+    height: 2.3rem;
+    display:block;
+}
+.kong{
+    height:0.19rem;
+}
+.six-1{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color:#333;
+    font-size: 0.24rem;
+    line-height: 0.24rem;
+    height: 0.42rem;
+}
+
+.six-2{
+    font-size: 0.18rem;
+    color: red;
+}
