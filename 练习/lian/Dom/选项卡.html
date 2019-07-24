@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .kuangjia {
+            margin: 100px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .tittle {
+            list-style: none;
+            overflow: hidden;
+        }
+
+        .tittle li {
+            float: left;
+            background-color: #f1f1f1;
+            border: 1px solid #898989;
+            font-size: 14px;
+            width: 52px;
+            height: 32px;
+            line-height: 32px;
+            text-align: center;
+            margin-right: 10px;
+        }
+
+        .road {
+            width: 300px;
+            height: 150px;
+            border: 1px solid #898989;
+            position: relative;
+
+        }
+
+        .road .haha {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .road .haha1 {
+            font-size: 16px;
+            display: block;
+            color: red;
+        }
+
+        .tittle li.ding1 {
+            background: #6D84B4;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="kuangjia">
+        <ul class="tittle">
+            <li class="ding1">
+                事实
+            </li>
+            <li class="ding2">
+                新闻
+            </li>
+            <li class="ding3">
+                娱乐
+            </li>
+        </ul>
+        <div class="road">
+            <div class="haha1 haha">
+                <p>事实</p>
+            </div>
+            <div class="haha">
+                <p>新闻</p>
+            </div>
+            <div class="haha">
+                <p>娱乐</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        var aLi = document.getElementsByTagName('li');
+        var aLi1 = document.getElementsByClassName('haha');
+        for (var i = 0; i < aLi.length; i++) {
+            aLi[i].index = i;
+            aLi[i].onclick = function () {
+
+                for (var j = 0; j < aLi.length; j++) {
+                    aLi[j].className = "";
+                    aLi1[j].className = "haha";
+
+                }
+                this.className = "ding1";
+                aLi1[this.index].className = "haha1 haha";
+            }
+        }   
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style: none;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .kuangjia {
+            width: 1230px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .tu {
+            overflow: hidden;
+            margin-top: 200px;
+
+        }
+
+        .tu li {
+            display: none;
+            text-align: center;
+            position: absolute;
+            top: 0;
+            left: 240px;
+        }
+
+        .tu .haha {
+            display: block;
+        }
+
+        .suoyi {
+            position: absolute;
+            top: 250px;
+            left: 790px;
+
+        }
+
+        .fuhao {
+            position: absolute;
+            left: 255px;
+            top: 250px;
+        }
+
+        .suoyi li {
+            float: left;
+            width: 25px;
+            height: 25px;
+            line-height: 25px;
+            margin-right: 10px;
+            color: #fff;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+        }
+
+        .suoyi .suoyi1 {
+            background: red;
+        }
+
+        .fuhao li {
+            float: left;
+            width: 25px;
+            height: 25px;
+            line-height: 25px;
+            margin-right: 10px;
+            color: #fff;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="kuangjia">
+
+        <ul class="tu">
+            <li class="haha">
+                <img src="images/1.jpg" alt="">
+            </li>
+            <li>
+                <img src="images/2.jpg" alt="">
+            </li>
+            <li>
+                <img src="images/3.jpg" alt="">
+            </li>
+            <li>
+                <img src="images/4.jpg" alt="">
+            </li>
+            <li>
+                <img src="images/5.jpg" alt="">
+            </li>
+
+        </ul>
+        <ul class="suoyi">
+            <li class="suoyi1">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+        <ul class="fuhao">
+            <li id="fuhaoleft">&lt;</li>
+            <li id="fuhaoright">></li>
+        </ul>
+
+
+    </div>
+    <script>
+        var h=0;
+        var aLi = document.getElementsByClassName('tu')[0];
+        var aLi1 = aLi.getElementsByTagName('li');
+        var aLi2 = document.getElementsByClassName('suoyi')[0];
+        var aLi3 = aLi2.getElementsByTagName('li');
+        var oDiv1 = document.getElementById('fuhaoleft');
+        var oDiv2 = document.getElementById('fuhaoright');
+        for (var i = 0; i < aLi3.length; i++) {
+            aLi3[i].index = i;
+            aLi3[i].onclick = function () {
+
+                for (var j = 0; j < aLi3.length; j++) {
+                    aLi3[j].className = "";
+                    aLi1[j].className = "";
+
+                }
+                this.className = "suoyi1";
+                aLi1[this.index].className = "haha";
+            }
+        }
+        oDiv1.onclick = function () {
+            h--;
+            if (h == -1) {
+                h = 4;
+            }
+            for (var j = 0; j < aLi3.length; j++) {
+                aLi3[j].className = "";
+                aLi1[j].className = "";
+
+            }
+            aLi3[h].className = "suoyi1";
+            aLi1[h].className = "haha";
+
+        }
+        oDiv2.onclick = function () {
+            h++;
+            if (h == 5) {
+                h = 0;
+            }
+            for (var j = 0; j < aLi3.length; j++) {
+                aLi3[j].className = "";
+                aLi1[j].className = "";
+
+            }
+            aLi3[h].className = "suoyi1";
+            aLi1[h].className = "haha";
+
+        } 
+    </script>
+</body>
+
+</html>
